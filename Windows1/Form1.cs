@@ -31,19 +31,5 @@ namespace Windows1
         private void wbView_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
         }
-
-        public void RemoveText(object sender, EventArgs e)
-        {
-            if (myTxtbx.Text == "Enter text here...")
-            {
-                myTxtbx.Text = "";
-            }
-        }
-
-        public void AddText(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(myTxtbx.Text))
-                myTxtbx.Text = "Enter text here...";
-        }
     }
 }
