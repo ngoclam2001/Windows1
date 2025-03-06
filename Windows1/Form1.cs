@@ -21,6 +21,8 @@ namespace Windows1
         private void button1_Click(object sender, EventArgs e)
         {
             string link = txtLink.Text;
+
+            web_1.CoreWebView2.Navigate("file:///"+link);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
